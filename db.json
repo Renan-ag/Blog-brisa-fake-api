@@ -1,9 +1,181 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "id_user": 1,
+      "date": "2025-03-18T10:00:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=0",
+      "category": "Tecnologia",
+      "title": "O futuro da IA no desenvolvimento web",
+      "resume": "A inteligência artificial está transformando o desenvolvimento web, automatizando tarefas, melhorando a experiência do usuário e acelerando a criação de sites e aplicativos.",
+      "content": "A inteligência artificial (IA) está revolucionando o desenvolvimento web, trazendo automação, personalização e eficiência para a criação de sites e aplicativos.\n\nFerramentas como GitHub Copilot, ChatGPT e plataformas de low-code estão permitindo que desenvolvedores automatizem tarefas repetitivas, gerem código rapidamente e otimizem a experiência do usuário com base em dados.\n\nAlém disso, a IA pode analisar padrões de navegação para sugerir layouts mais eficientes, melhorar a acessibilidade e até mesmo detectar bugs antes que eles afetem o desempenho.\n\nEspecialistas preveem que, nos próximos anos, a IA não substituirá os desenvolvedores, mas se tornará uma ferramenta essencial para aumentar a produtividade e permitir a criação de soluções web mais inovadoras.\n\nNo entanto, desafios como ética, privacidade de dados e a necessidade de supervisão humana ainda precisam ser abordados para que a IA seja integrada de forma responsável no desenvolvimento web.",
+      "duration": "5 min",
+      "views": 1200,
+      "status": true
+    },
+    {
+      "id": 2,
+      "id_user": 1,
+      "date": "2025-03-17T14:30:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=1",
+      "category": "Design",
+      "title": "Principais tendências de UI/UX para 2025",
+      "resume": "O design de interfaces e experiência do usuário em 2025 será marcado por inteligência artificial, personalização extrema, interfaces 3D e foco em acessibilidade.",
+      "content": "O ano de 2025 promete trazer transformações significativas no campo de UI/UX Design, com tecnologias emergentes redefinindo como os usuários interagem com produtos digitais.\n\nEntre as principais tendências estão:\n\n1. **Design impulsionado por IA** - Ferramentas generativas criando interfaces personalizadas em tempo real, adaptando-se ao comportamento do usuário.\n\n2. **Realidade Espacial e 3D** - Com a popularização de dispositivos como Vision Pro, interfaces holográficas e elementos tridimensionais se tornarão comuns.\n\n3. **Micro-interações avançadas** - Animais de estimação digitais e assistentes virtuais que acompanham o usuário em diferentes plataformas.\n\n4. **Neomorfismo 2.0** - Evolução do design suave com toques realistas, combinando profundidade e minimalismo.\n\n5. **UX inclusivo como padrão** - Acessibilidade deixará de ser um diferencial para se tornar requisito básico, com designs que se adaptam a diversas necessidades.\n\n6. **Interfaces sem telas** - Controle por voz, gestos e até pensamento (via interfaces neurais) ganharão espaço.\n\n7. **Design emocional** - Sistemas capazes de detectar e responder ao estado emocional do usuário através de expressões faciais ou padrões de uso.\n\nEspecialistas alertam que, apesar das inovações, o bom design continuará priorizando clareza, usabilidade e propósito acima de efeitos visuais.",
+      "duration": "6 min",
+      "views": 980,
+      "status": true
+    },
+    {
+      "id": 3,
+      "id_user": 2,
+      "date": "2025-03-16T08:45:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=2",
+      "category": "Negócios",
+      "title": "Como iniciar um negócio online em 2025",
+      "resume": "Em 2025, empreender online exigirá estratégias adaptadas às novas tecnologias, como IA generativa, comércio em metaverso e automação avançada. Este guia apresenta os passos essenciais para começar.",
+      "content": "O cenário de negócios online em 2025 traz oportunidades inéditas, mas também requer abordagens atualizadas. Siga este passo a passo para lançar seu empreendimento digital:\n\n1. **Definição de Nicho com IA**\nUtilize ferramentas como ChatGPT Enterprise e Google's Market Analysis AI para identificar demandas não atendidas, cruzando dados de consumo emergentes.\n\n2. **Modelo Híbrido Web3**\nCombine loja tradicional (Shopify 3.0) com presença em metaversos, aceitando criptomoedas e tokens não-fungíveis (NFTs) como opção de pagamento.\n\n3. **Automação Integral**\nSistemas como AutoGuru podem gerenciar inventário, atendimento por IA emocional (ex.: Inflection AI) e marketing preditivo automaticamente.\n\n4. **Produto na Nuvem**\nOpte por modelos assinatura com benefícios em realidade aumentada ou serviços digitais personalizados por algoritmos.\n\n5. **SEO 360°**\nAlém do Google, otimize para busques por voz (Alexa/Google Assistant), visual (Pinterest Lens) e neural (wearables de controle mental).\n\n6. **Logística Autônoma**\nParcerias com drones delivery (Amazon Prime Air) e armazéns robotizados reduzem custos operacionais.\n\n7. **Compliance Digital**\nAdapte-se às novas leis de privacidade (LGPD 3.0) e regulamentações de IA comercial.\n\nDica crucial: Ferramentas como Adobe Firefly 3.0 permitem criar identidade visual completa em minutos, enquanto plataformas como Wix AI montam sites funcionais com prompts de voz.\n\nO segredo para 2025? Comece enxuto, valide rapidamente com MVPs automatizados e escale com tecnologias cognitivas.",
+      "duration": "7 min",
+      "views": 1450,
+      "status": true
+    },
+    {
+      "id": 4,
+      "id_user": 3,
+      "date": "2025-03-15T11:20:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=3",
+      "category": "Jogos",
+      "title": "Como a Nintendo salvou os jogos",
+      "resume": "Nos anos 80, a Nintendo revitalizou a indústria de videogames após a grande crise, introduzindo controles de qualidade, franquias icônicas e inovações que definiram o futuro dos jogos.",
+      "content": "Em 1983, a indústria de videogames entrou em colapso com a chamada 'Crash dos Videogames', causada pela saturação do mercado com jogos de baixa qualidade. Foi a Nintendo, com seu NES (Nintendo Entertainment System), que resgatou todo o setor em 1985.\n\nA empresa japonesa implementou estratégias revolucionárias:\n\n1. **Selo de Qualidade** - Criou o 'Selode Qualidade Nintendo' para garantir padrões mínimos nos jogos\n2. **Controle de Publicação** - Limitou o número de títulos que cada desenvolvedora podia lançar\n3. **Franquias Eternas** - Introduziu personagens como Mario, Zelda e Metroid que se tornaram pilares da indústria\n4. **Inovação em Controles** - Popularizou o D-pad e depois o analógico com o Nintendo 64\n\nAlém disso, a Nintendo:\n\n- Salvou os arcades com jogos como Donkey Kong\n- Reinventou os portáteis com o Game Boy\n- Trouxe inovação constante com consoles como o Wii e Switch\n\nSeu legado mostra que, mais que tecnologia, foi a paixão por jogos bem-feitos e experiências únicas que verdadeiramente salvou - e continua salvando - a indústria dos videogames.",
+      "duration": "8 min",
+      "views": 1870,
+      "status": true
+    },
+    {
+      "id": 5,
+      "id_user": 4,
+      "date": "2025-03-14T16:10:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=4",
+      "category": "Saúde",
+      "title": "A importância da saúde mental no local de trabalho",
+      "resume": "A saúde mental no ambiente profissional tornou-se prioridade para empresas que buscam aumentar produtividade, reter talentos e criar culturas organizacionais mais humanizadas em 2024.",
+      "content": "Nos últimos anos, a saúde mental deixou de ser tabu para se tornar um pilar estratégico nas organizações. Pesquisas mostram que:\n\n1. **Impacto Econômico**\n- A OMS estima que depressão e ansiedade custam US$ 1 trilhão/ano em perda de produtividade global\n- Empresas com programas de bem-estar mental têm 23% menos absenteísmo\n\n2. **Novas Políticas Corporativas**\n- Licenças saúde mental incluídas em pacotes de benefícios\n- Terapeutas e psicólogos no plano de saúde empresarial\n- Ambientes de trabalho com 'salas de descompressão'\n\n3. **Liderança Consciente**\n- Treinamento de gestores para identificar sinais de burnout\n- Carga horária flexível e políticas anti-assédio reforçadas\n- Metas realistas que consideram o fator humano\n\n4. **Ferramentas Inovadoras**\n- Apps corporativos com meditação guiada (ex.: Headspace for Work)\n- Inteligência Artificial que monitora padrões de estresse (com ética)\n- Programas de mentoria entre colegas\n\nCases de sucesso:\n- Microsoft implementou semanas de 4 dias com aumento de 40% na produtividade\n- Google oferece 'mental health days' extras por ano\n\nEspecialistas afirmam: cuidar da mente deixou de ser diferencial - é requisito básico para empresas que querem atrair a geração Z e millennials, grupos que priorizam bem-estar acima de salários altos.",
+      "duration": "5 min",
+      "views": 1100,
+      "status": true
+    },
+    {
+      "id": 6,
+      "id_user": 2,
+      "date": "2025-03-13T13:40:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=5",
+      "category": "Turismo",
+      "title": "Melhores destinos de viagem para 2025",
+      "resume": "Em 2025, os viajantes buscarão experiências únicas, sustentáveis e tecnologicamente integradas, com destinos que vão desde retiros espaciais até ecoturismo regenerativo.",
+      "content": "O ano de 2025 promete revolucionar o conceito de viagens, combinando inovação tecnológica com consciência ecológica. Estes são os destinos que estarão no radar:\n\n**1. Viagens Espaciais Acessíveis**\n- Voos suborbitais da Virgin Galactic (US$ 450 mil)\n- Hotel espacial da Voyager Station (abertura prevista)\n\n**2. Ecoturismo Regenerativo**\n- Costa Rica: 1º país carbono negativo do mundo\n- Butão: modelo de turismo sustentável\n- Projeto Rewilding Portugal\n\n**3. Cidades 15 Minutos**\n- Paris: modelo urbano completo\n- Tóquio: eficiência com tradição\n\n**4. Destinos de Realidade Mista**\n- Dubai (experiências com metaverso)\n- Coreia do Sul (cidades inteligentes)\n\n**5. Turismo de Longevidade**\n- Okinawa (Japão): programas de imersão wellness\n- Sardenha (Itália): dieta da zona azul\n\n**Tendências Emergentes:**\n- Passaportes digitais com NFT\n- Roteiros gerados por IA personalizada\n- Hotéis com quartos que mudam de decoração digitalmente\n\nEspecialistas alertam: em 2025, viajar será sobre propósito, não apenas destino. A nova geração priorizará experiências transformadoras que contribuam positivamente para os locais visitados.",
+      "duration": "6 min",
+      "views": 900,
+      "status": true
+    },
+    {
+      "id": 7,
+      "id_user": 1,
+      "date": "2025-03-12T18:15:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=6",
+      "category": "Fitness",
+      "title": "Rotinas de treino de 10 minutos para pessoas ocupadas",
+      "resume": "Mesmo com a agenda cheia, é possível manter a forma com treinos curtos e intensos. Descubra rotinas eficientes de apenas 10 minutos que podem ser feitas em casa ou no escritório.",
+      "content": "Para quem tem uma rotina atribulada, separar horas para exercícios pode ser um desafio. Mas estudos mostram que treinos curtos e intensos podem ser tão eficazes quanto sessões longas, quando bem planejados. Confira estas opções:\n\n**Treino HIIT (High Intensity Interval Training)**\n- 40 segundos de atividade intensa\n- 20 segundos de descanso\n- Repetir por 10 minutos\n\n**Exercícios sugeridos:**\n1. Polichinelos\n2. Agachamentos\n3. Flexões (pode ser na parede ou no chão)\n4. Prancha abdominal\n5. Corrida estacionária\n\n**Treino de Escritório (sem equipamentos)**\n- Elevação de panturrilhas (2 min)\n- Agachamentos na cadeira (2 min)\n- Rotação de tronco (2 min)\n- Alongamento de braços (2 min)\n- Respiração profunda (2 min)\n\n**Dicas para maximizar os resultados:**\n- Priorize a consistência: melhor 10min diários que 1h semanal\n- Combine com hábitos saudáveis (subir escadas, caminhar após almoço)\n- Use apps de treino rápido (como Seven ou Nike Training Club)\n\nLembre-se: antes de começar qualquer rotina de exercícios, consulte um profissional de educação física para adaptar os movimentos ao seu condicionamento.",
+      "duration": "4 min",
+      "views": 1250,
+      "status": true
+    },
+    {
+      "id": 8,
+      "id_user": 3,
+      "date": "2025-03-11T09:00:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=7",
+      "category": "Culinária",
+      "title": "As 5 melhores receitas saudáveis para uma dieta equilibrada",
+      "resume": "Descubra 5 receitas nutritivas, saborosas e fáceis de preparar que combinam ingredientes saudáveis para manter uma alimentação balanceada no dia a dia.",
+      "content": "Manter uma dieta equilibrada não precisa ser complicado nem sem sabor. Estas 5 receitas provam que comida saudável pode ser prática, deliciosa e nutritiva:\n\n1. **Bowl de Quinoa com Abacate e Ovo Pochê**\n- Ingredientes: quinoa, abacate, ovos, tomate cereja, rúcula\n- Benefícios: proteína completa, gorduras boas, fibras\n- Tempo: 15 minutos\n\n2. **Salmão Grelhado com Brócolis e Batata-Doce**\n- Ingredientes: filé de salmão, brócolis, batata-doce, azeite\n- Benefícios: ômega-3, antioxidantes, carboidrato complexo\n- Tempo: 20 minutos\n\n3. **Panqueca de Banana e Aveia (sem farinha)**\n- Ingredientes: banana, aveia, ovo, canela\n- Benefícios: sem glúten, rica em fibras, adoçada naturalmente\n- Tempo: 10 minutos\n\n4. **Salada de Grão-de-Bico com Atum e Vegetais**\n- Ingredientes: grão-de-bico, atum, pepino, pimentão, azeitonas\n- Benefícios: proteína vegetal e animal, saciedade prolongada\n- Tempo: 10 minutos (usando grão enlatado)\n\n5. **Smoothie Verde Energético**\n- Ingredientes: espinafre, banana, abacate, leite vegetal, chia\n- Benefícios: vitaminas, minerais, energia sustentável\n- Tempo: 5 minutos\n\n**Dicas para uma dieta verdadeiramente equilibrada:**\n- Varie as cores no prato (cada cor representa nutrientes diferentes)\n- Prefira alimentos in natura aos processados\n- Mantenha hidratação adequada\n- Coma a cada 3-4 horas para manter o metabolismo ativo\n\nEstas receitas provam que alimentação saudável pode ser simples, rápida e extremamente saborosa, adaptando-se até mesmo às rotinas mais corridas.",
+      "duration": "6 min",
+      "views": 890,
+      "status": true
+    },
+    {
+      "id": 9,
+      "id_user": 5,
+      "date": "2025-03-10T15:30:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=8",
+      "category": "Filmes",
+      "title": "Melhores filmes para assistir em 2025",
+      "resume": "2025 promete ser um ano emocionante para o cinema, com grandes blockbusters, produções inovadoras e histórias cativantes. Confira os lançamentos mais aguardados do ano.",
+      "content": "O ano de 2025 está repleto de produções cinematográficas que prometem agradar aos mais diversos gostos. Desde super-heróis até dramas intensos, estes são os filmes mais aguardados:\n\n1. **Super-Heróis e Aventuras**\n- 'Avengers: Secret Wars' (Marvel)\n- 'Superman: Legacy' (DC Universe)\n- 'Jurassic World: Renascimento'\n\n2. **Ficção Científica Inovadora**\n- 'M3GAN 3.0' (terror tecnológico)\n- 'The Creator 2' (inteligência artificial)\n- 'Project Artemis' (missão lunar com Scarlett Johansson)\n\n3. **Dramas e Adaptações**\n- 'The Lord of the Rings: The War of the Rohirrim' (animação)\n- 'Wicked: Part 2' (musical)\n- 'A Quiet Place: Day One' (spin-off)\n\n4. **Animação e Fantasia**\n- 'Elio' (Pixar)\n- 'Moana 2' (Disney)\n- 'How to Train Your Dragon: Return to the Wild'\n\n5. **Cinema Autoral e Indicações a Oscar**\n- Novo filme de Christopher Nolan\n- 'The Nickel Boys' (baseado no livro best-seller)\n- 'Blitz' (filme de guerra de Steve McQueen)\n\n**Tendências para 2025:**\n- Mais filmes com tecnologia de IA generativa\n- Experiências imersivas em realidade virtual\n- Remakes com abordagens inovadoras\n\nDica: Muitas plataformas de streaming já anunciaram pré-estreias exclusivas para esses títulos, então vale conferir os lançamentos digitais também!",
+      "duration": "7 min",
+      "views": 1340,
+      "status": true
+    },
+    {
+      "id": 10,
+      "id_user": 4,
+      "date": "2025-03-09T12:00:00Z",
+      "imageUrl": "https://picsum.photos/1920/1100?random=9",
+      "category": "Literatura",
+      "title": "Os 10 melhores livros que você deve ler este ano",
+      "resume": "Descubra uma seleção diversificada de livros imperdíveis, desde ficção contemporânea até não-ficção transformadora, que prometem inspirar, entreter e expandir horizontes em 2024.",
+      "content": "Este ano traz uma riqueza de obras literárias excepcionais para todos os gostos. Aqui está a curadoria essencial para sua lista de leitura:\n\n1. **'O Farol' - Colson Whitehead**\n   - Romance histórico sobre um menino durante a segregação\n   - Vencedor do Pulitzer 2023\n\n2. **'Build the Life You Want' - Arthur Brooks & Oprah**\n   - Guia prático para felicidade autêntica\n   - Combina psicologia e sabedoria prática\n\n3. **'The Comfort Crisis' - Michael Easter**\n   - Como sair da zona de conforto para uma vida mais plena\n   - Baseado em pesquisas neurocientíficas\n\n4. **'Terra Fria' - Silvia Moreno-Garcia**\n   - Mistério gótico com elementos de horror cósmico\n   - Da autora best-seller de 'Mexican Gothic'\n\n5. **'The Creative Act' - Rick Rubin**\n   - Manifesto sobre o processo criativo\n   - Do lendário produtor musical\n\n6. **'Os sobreviventes' - Ana Paula Maia**\n   - Distopia brasileira aclamada internacionalmente\n   - Reflexão sobre humanidade e resiliência\n\n7. **'Outlive' - Peter Attia**\n   - Revolução na medicina preventiva\n   - Como prolongar saúde e longevidade\n\n8. **'Yellowface' - R.F. Kuang**\n   - Satira ácida sobre apropriação cultural\n   - Um dos debates literários do ano\n\n9. **'Amanhã e Amanhã e Amanhã' - Gabrielle Zevin**\n   - Saga sobre amizade e criação de jogos digitais\n   - Sucesso entre millennials e Gen Z\n\n10. **'O Poder da Consciência' - Lisa Feldman Barrett**\n   - Neurociência acessível sobre como construímos a realidade\n   - Mudará sua percepção da mente humana\n\n**Dica de leitura inteligente:**\n- Combine 1 livro de ficção + 1 de não-ficção simultaneamente\n- Participe de clubes de leitura online para trocas profundas\n- Experimente audiolivros para 'ler' durante deslocamentos\n\nEsta lista equilibra obras transformadoras com narrativas cativantes, oferecendo nutrição tanto para a mente quanto para a alma em 2024.",
+      "duration": "8 min",
+      "views": 760,
+      "status": true
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "users": [
+    {
+      "id": "1",
+      "user": "johndoe",
+      "name": "John",
+      "surname": "Doe",
+      "token": "a1b2c3d4e5",
+      "description": "Tech enthusiast and writer",
+      "imageProfile": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": "2",
+      "user": "janesmith",
+      "name": "Jane",
+      "surname": "Smith",
+      "token": "f6g7h8i9j0",
+      "description": "Passionate about design and UX",
+      "imageProfile": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": "3",
+      "user": "mikebrown",
+      "name": "Mike",
+      "surname": "Brown",
+      "token": "k1l2m3n4o5",
+      "description": "Web developer and open-source contributor",
+      "imageProfile": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+      "id": "4",
+      "user": "sarajohnson",
+      "name": "Sara",
+      "surname": "Johnson",
+      "token": "p6q7r8s9t0",
+      "description": "Lover of books and tech blogging",
+      "imageProfile": "https://i.pravatar.cc/150?img=4"
+    },
+    {
+      "id": "5",
+      "user": "davidlee",
+      "name": "David",
+      "surname": "Lee",
+      "token": "u1v2w3x4y5",
+      "description": "Cybersecurity expert and writer",
+      "imageProfile": "https://i.pravatar.cc/150?img=5 "
+    }
+  ]
 }
