@@ -14,6 +14,7 @@ const server = jsonServer.create()
 // Comment out to allow write operations
 const router = jsonServer.router('db.json')
 
+server.use(jsonServer.defaults({ static: './public' }))
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
