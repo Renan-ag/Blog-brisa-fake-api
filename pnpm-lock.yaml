@@ -11,6 +11,9 @@ importers:
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
+      express:
+        specifier: ^4.21.2
+        version: 4.21.2
       json-server:
         specifier: ^0.17.4
         version: 0.17.4
