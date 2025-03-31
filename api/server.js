@@ -13,9 +13,33 @@ const server = jsonServer.create()
 
 // Comment out to allow write operations
 const router = jsonServer.router('db.json')
+const BASE_URL = process.env.BASE_URL || 'http://localhost:3000'
 
 server.use(jsonServer.defaults({ static: './public' }))
 const middlewares = jsonServer.defaults()
+
+// Middleware para transformar imageUrl
+server.use((req, res, next) => {
+  const originalSend = res.json
+  res.json = function (data) {    
+    if (req.path.includes('/posts')) {
+      data = Array.isArray(data) 
+        ? data.map(transformImageUrls) 
+        : transformImageUrls(data)
+    }
+    originalSend.call(this, data)
+  }
+  next()
+})
+
+function transformImageUrls(item) {
+  return {
+    ...item,    
+    imageUrl: item.imageUrl?.startsWith('http')
+      ? item.imageUrl
+      : `${BASE_URL}/images/${item.imageUrl}`
+  }
+}
 
 server.use(middlewares)
 // Add this before server.use(router)
