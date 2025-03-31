@@ -1,40 +1,54 @@
-const jsonServer = require('json-server');
-const express = require('express');
+require("dotenv").config();
+
+const jsonServer = require("json-server");
+const express = require("express");
 const server = jsonServer.create();
+const router = jsonServer.router("db.json");
 const path = require('path');
 
-// Carrega o db.json em memória (somente leitura)
-const db = require('./db.json'); 
-const router = jsonServer.router(db); 
+const BASE_URL = process.env.BASE_URL || "http://localhost:3000";
 
-// Middlewares
-server.use(jsonServer.defaults());
-
-// Serve arquivos estáticos (imagens)
 server.use('/public', express.static(path.join(__dirname, 'public')));
+const middlewares = jsonServer.defaults();
 
-// Middleware para corrigir URLs de imagens
+server.use(middlewares);
+
+// Middleware para formatar a resposta
 server.use((req, res, next) => {
-  const originalSend = res.send;
-  res.send = function(body) {
-    if (typeof body === 'string') {
-      try {
-        let data = JSON.parse(body);
-        if (Array.isArray(data)) {
-          data = data.map(item => ({
-            ...item,
-            imageUrl: item.imageUrl?.startsWith('http') 
-              ? item.imageUrl 
-              : `${process.env.BASE_URL || 'http://localhost:3000'}/public/images/${item.imageUrl}`
-          }));
-        }
-        body = JSON.stringify(data);
-      } catch (e) {}
+  const send = res.send;
+  res.send = (body) => {
+    let data = JSON.parse(body);
+
+    if (Array.isArray(data)) {
+      data = data.map(formatImageUrl);
+    } else {
+      data = formatImageUrl(data);
     }
-    originalSend.call(res, body);
+
+    send.call(res, JSON.stringify(data));
   };
   next();
 });
 
+function formatImageUrl(item) {
+  if (item.imageUrl && !item.imageUrl.startsWith("http")) {
+    item.imageUrl = `${BASE_URL}/public/images/${item.imageUrl}`;
+  }
+  return item;
+}
+
+// Add this before server.use(router)
+server.use(
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+    "/blog/:resource/:id/show": "/:resource/:id",
+  })
+);
+
 server.use(router);
+server.listen(3000, () => {
+  console.log("JSON Server is running");
+});
+
+// Export the Server API
 module.exports = server;
