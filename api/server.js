@@ -15,7 +15,6 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const BASE_URL = process.env.BASE_URL || "http://localhost:3000";
 
-server.use("/public", jsonServer.defaults({ static: "public" }));
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
