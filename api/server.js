@@ -1,6 +1,6 @@
 // See https://github.com/typicode/json-server#module
 const jsonServer = require('json-server')
-
+require('dotenv').config();
 const server = jsonServer.create()
 
 // Uncomment to allow write operations
@@ -18,30 +18,32 @@ const BASE_URL = process.env.BASE_URL || 'http://localhost:3000'
 server.use(jsonServer.defaults({ static: './public' }))
 const middlewares = jsonServer.defaults()
 
-// Middleware para transformar imageUrl
+server.use(middlewares)
+
+// Middleware para formatar a resposta
 server.use((req, res, next) => {
-  const originalSend = res.json
-  res.json = function (data) {    
-    if (req.path.includes('/posts')) {
-      data = Array.isArray(data) 
-        ? data.map(transformImageUrls) 
-        : transformImageUrls(data)
-    }
-    originalSend.call(this, data)
+  const send = res.send
+  res.send = (body) => {
+      let data = JSON.parse(body)
+      
+      if (Array.isArray(data)) {
+          data = data.map(formatImageUrl)
+      } else {
+          data = formatImageUrl(data)
+      }
+      
+      send.call(res, JSON.stringify(data))
   }
   next()
 })
 
-function transformImageUrls(item) {
-  return {
-    ...item,    
-    imageUrl: item.imageUrl?.startsWith('http')
-      ? item.imageUrl
-      : `${BASE_URL}/images/${item.imageUrl}`
+function formatImageUrl(item) {
+  if (item.imageUrl && !item.imageUrl.startsWith('http')) {
+      item.imageUrl = `${BASE_URL}/${item.imageUrl}`
   }
+  return item
 }
 
-server.use(middlewares)
 // Add this before server.use(router)
 server.use(jsonServer.rewriter({
     '/api/*': '/$1',
