@@ -10,8 +10,5 @@
       "source": "/(.*)",
       "destination": "api/server.js"
     }
-  ],
-  "assets": {
-    "includeFiles": "public/**"
-  }
+  ]
 }
